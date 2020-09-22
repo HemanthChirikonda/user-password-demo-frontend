@@ -19,9 +19,7 @@ alert(loginRes.message);
 
 }
 
-document.getElementById('usersubmit').addEventListener("click",()=>{
- genaretecode();
-})
+
 
 
 
@@ -49,4 +47,5 @@ if(loginRes.token){
 }else{
     alert(loginRes.message);
 }
-}
+};
+

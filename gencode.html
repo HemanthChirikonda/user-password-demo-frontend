@@ -6,14 +6,24 @@
     <title>Document</title>
         <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+<style>
+  body{
+    background-image: url("./images/login-bg.jpg");
+  }
+  #form2{
+    color: grey;
+-webkit-box-shadow: 0px 3px 36px -3px rgba(23, 50, 170, 0.75);
+-moz-box-shadow: 0px 3px 36px -3px rgba(23, 50, 170, 0.75);
+box-shadow: 0px 3px 36px -3px rgba(23, 50, 170, 0.75);
+}
+</style>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8 mt-5">
-                <form  onsubmit="return false" >
+                <form id="form1" onsubmit=" genaretecode(); return false" >
                     <div class="form-row">
                       <div class="form-group col-md-6 mt-5">
                         <label for="inputEmail4">Email</label>
@@ -25,18 +35,21 @@
                       </div>
                       <button type="submit" class="btn btn-primary" id="usersubmit">send 6 digits code</button>
                     </form>
-                    <form class="col-12" onsubmit="verifycode(); return false;">
-                        <div class="row">
-                         <div class="col-3"></div>
-                         <div class="col-6">
+                   <div class="col-12 mt-5">
+                    <div class="row">
+                      <div class="col-2"></div>
+                      <div class="col-8">
+                          <form id="form2" class=" mt-5  p-4 col-12" onsubmit=" verifycode();  return false">
+                      
                           <div class="form-group mt-5 ml-0">
                               <label for="inputcode">Enter OTP</label>
                               <input type="text" class="form-control" required maxlength="6" id="inputcode">
                             </div>
-                            <button type="submit" class="btn btn-primary" id="usersubmit">verify code</button>
+                            <button type="submit" class="btn btn-primary" id="usersubmit1">verify code</button>
                          </div>
-                         <div class="col-6"></div>
+                         <div class="col-2"></div>
                         </div>
+                   </div>
                 </form>
             </div>
             <div class="col-2"></div>
