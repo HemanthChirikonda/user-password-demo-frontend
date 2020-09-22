@@ -18,7 +18,7 @@ async function genaretecode(){
 
 
 }
-document.getElementById('usersubmit2').addEventListener("click",(e)=>{
+(document.getElementById('usersubmit2'))?.addEventListener("click",(e)=>{
 e.preventDefault();
 genaretecode();
 return false;
@@ -53,7 +53,7 @@ if(loginRes.token){
 }
 };
 
-document.getElementById('usersubmit1').addEventListener("click",(e)=>{
+(document.getElementById('usersubmit1'))?.addEventListener("click",(e)=>{
     e.preventDefault();
     verifycode();
     return false;
