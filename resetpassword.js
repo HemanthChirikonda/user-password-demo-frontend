@@ -1,13 +1,25 @@
 async function checkdetails(){
+let newpassword= (document.getElementById("newpassword")).value;
+let conformpassword= (document.getElementById("conformpassword")).value;
+if(newpassword === conformpassword){
     let data={
-        "Email": (document.getElementById('inputEmail4')).value,
-        "Dob":(document.getElementById("inputDob")).value
-
+        "Email":localStorage.getItem("Email"),
+        "Password":(document.getElementById('newpassword')).value
     }
-
-let res= await fetch("",{
+    let resdata= await fetch("https://trim-url-app.herokuapp.com/newpassword",{
+        method:"POST",
+        headers: {
+           'Content-Type': 'application/json',
+           // 'Content-Type': 'application/x-www-form-urlencoded',
+           'authorization':localStorage.getItem("token")
+         },
+         body: JSON.stringify(data)
     
-})
-
-
+    });
+    let loginRes= await resdata.json();
+ alert(loginRes.message);
+ window.location.href="./login.html"
+}else{
+    alert("Both passowrds are not same")
+}   
 }
