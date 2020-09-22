@@ -87,4 +87,10 @@ headers: {
 
  let result= await data.json()
  alert(result.message);
-}
+};
+
+
+document.getElementById('log_out').addEventListener("click",()=>{
+  localStorage.removeItem("token");
+  window.location.href="./login.html"
+})

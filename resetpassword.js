@@ -23,3 +23,9 @@ if(newpassword === conformpassword){
     alert("Both passowrds are not same")
 }   
 }
+
+document.getElementById('usersubmit').addEventListener("click",(e)=>{
+    e.preventDefault();
+   checkdetails();
+    return false;
+    })

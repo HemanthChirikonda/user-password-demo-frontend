@@ -23,13 +23,13 @@ async function registerUser(){
      });
      let message=await responec.json();
     if(message.message=== "user alredy present"){
-        return false;
+        //return false;
         (document.getElementById('inputEmail4')).style.boxShadow="inset 1px 1px 10px 2px rgba(248, 0, 152, 0.54)";
         alert(message.message);
        
     }else{
         alert(message.message);
-        return true;
+          window.location.href="./login.html"
     }
 
 

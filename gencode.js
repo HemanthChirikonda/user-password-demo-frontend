@@ -18,7 +18,11 @@ alert(loginRes.message);
 
 
 }
-
+document.getElementById('usersubmit').addEventListener("click",(e)=>{
+e.preventDefault();
+genaretecode();
+return false;
+})
 
 
 
@@ -49,3 +53,8 @@ if(loginRes.token){
 }
 };
 
+document.getElementById('usersubmit1').addEventListener("click",(e)=>{
+    e.preventDefault();
+    verifycode();
+    return false;
+    })
