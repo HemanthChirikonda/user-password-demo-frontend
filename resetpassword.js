@@ -1,6 +1,6 @@
 async function updatepassword(){
-let newpassword= (document.getElementById("newpassword")).value;
-let conformpassword= (document.getElementById("conformpassword")).value;
+let newpassword= document.getElementById("newpassword").value;
+let conformpassword= document.getElementById("conformpassword").value;
 if(newpassword === conformpassword){
     let data={
         "Email":localStorage.getItem("Email"),
