@@ -34,4 +34,9 @@ async function registerUser(){
 
 
 }
+document.getElementById("usersubmit").addEventListener("click",(e)=>{
+ e.preventDefault();
+registerUser();
 
+ return false;
+})
