@@ -22,10 +22,11 @@ if(newpassword === conformpassword){
 }else{
     alert("Both passowrds are not same")
 }   
-}
+};
 
 document.getElementById('passwordSubmit').addEventListener("click",(e)=>{
-    e.preventDefault();
-    updatepassword();
-    return false;
-    })
+e.preventDefault();
+updatepassword();
+
+return false;
+});

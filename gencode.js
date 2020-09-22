@@ -18,7 +18,7 @@ async function genaretecode(){
 
 
 }
-document.getElementById('usersubmit').addEventListener("click",(e)=>{
+document.getElementById('usersubmit2').addEventListener("click",(e)=>{
 e.preventDefault();
 genaretecode();
 return false;
