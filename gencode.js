@@ -14,7 +14,7 @@ async function genaretecode(){
     
     });
     let loginRes= await resdata.json();
-alert(loginRes.message);
+   alert(loginRes.message);
 
 
 }

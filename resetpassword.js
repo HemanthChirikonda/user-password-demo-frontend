@@ -1,4 +1,4 @@
-async function checkdetails(){
+async function updatepassword(){
 let newpassword= (document.getElementById("newpassword")).value;
 let conformpassword= (document.getElementById("conformpassword")).value;
 if(newpassword === conformpassword){
@@ -26,6 +26,6 @@ if(newpassword === conformpassword){
 
 document.getElementById('usersubmit').addEventListener("click",(e)=>{
     e.preventDefault();
-   checkdetails();
+    updatepassword();
     return false;
     })
