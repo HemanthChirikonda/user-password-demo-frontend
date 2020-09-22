@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+  #formDivOuter{
+    margin-top: 25vh;
+  }
+  #formDiv{
+    color: grey;
+-webkit-box-shadow: 0px 3px 36px -3px rgba(23, 50, 170, 0.75);
+-moz-box-shadow: 0px 3px 36px -3px rgba(23, 50, 170, 0.75);
+box-shadow: 0px 3px 36px -3px rgba(23, 50, 170, 0.75);
+
+  }
+
+  body{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image:url(./images/login-bg.jpg);
+    opacity: 0.9;
+  
+  }
+  a:hover{
+    border-style: none;
+color: white;
+  }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="formDivOuter">
+            <div class="col-4"></div>
+            <div class="col-4 mt-5 p-5 rounded bg-dark" id="formDiv">
+                <div class="row " >
+                    <form onsubmit="checkPassword();return false">
+                          <div class="form-group ">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control rounded" required id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control rounded" required id="exampleInputPassword1">
+                          </div>
+                          <button type="submit" class="btn btn-primary">login</button>
+                        </form>
+                        <div class="col-12 mt-2"><a href="./gencode.html" class="col-3">Forgot password?</a></div>
+                           <div class="col-4 md-0"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1 ">
+          <div class="col-4"></div>
+          <div class="col-4" style="color: whitesmoke;"> <span style="color: gray;">New user ? </span>
+           <a href="./register.html" class="col-2">Register</a></div>
+          <div class="col-4"></div>
+        </div>
+    </div>
+   <script src="login.js"></script> 
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+body{
+    background-image: url(./images/login-bg.jpg);
+
+}
+#display{
+    color: grey;
+-webkit-box-shadow: 0px 3px 36px -3px rgba(23, 50, 170, 0.75);
+-moz-box-shadow: 0px 3px 36px -3px rgba(23, 50, 170, 0.75);
+box-shadow: 0px 3px 36px -3px rgba(23, 50, 170, 0.75);
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-link" id="home">Home</button>
+                    </div>
+                    <div class="col-4"><button type="button" class="btn btn-link" id="dashboard">Dashboard</button></div>
+                    <div class="col-4"><button type="button" class="btn btn-link" id="log_out">Log out</button></div>
+                </div>
+            </div>
+            <div class="col-6"></div>
+        </div>
+        <div class="row mt-5" id="display">
+            <div class="col-12">
+                <form class="row" onsubmit="postdata();return false">
+                    <div class="col-2"></div>
+                <div class=" form-group col-10 mt-2"> <lable for="Url">Long Url<lable></div>
+                    <div class="col-2"></div>
+                  <div class="form-group col-6" style="text-align: center;">
+                    <input type="text" class="form-control" id="Url" placeholder="Url">
+                  </div>
+                  <div class="form-group col-4" >
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
