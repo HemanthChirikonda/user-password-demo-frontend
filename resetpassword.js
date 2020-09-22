@@ -24,7 +24,7 @@ if(newpassword === conformpassword){
 }   
 }
 
-document.getElementById('passwordsubmit').addEventListener("click",(e)=>{
+(document.getElementById('passwordSubmit')).addEventListener("click",(e)=>{
     e.preventDefault();
     updatepassword();
     return false;
